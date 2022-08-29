@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* header and navbar section */
+header {
+  grid-area: header;
+  background-color: #111;
+  color: #fff;
+}
+.search {
+  display: flex;
+}
+.search input {
+  /* border-radius: 20px; */
+  border: none;
+  background-color: #f7f9fe;
+  width: 15pc;
+  border-radius: 4px;
+}
+
+::placeholder {
+  text-align: center;
+  font-weight: 400;
+}
+.nav_links {
+  display: flex;
+  gap: 30%;
+  list-style-type: none;
+  /* justify-content: center; */
+}
+
+/* sidebar */
+aside {
+  grid-area: sidebar;
+  background-color: rgba(178, 34, 34, 0);
+  /* width: 20%; */
+  margin: 0px;
+}
+ul.navs {
+  padding: 0px;
+  cursor: pointer;
+}
+
+aside ul li {
+  border-bottom: 2px solid saddlebrown;
+  width: 100%;
+  list-style-type: none;
+}
+
+article {
+  grid-area: content;
+  background-color: #f7f9fe;
+  width: 100%;
+  margin: 0;
+}
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  border-radius: 20px;
+}
+.features > div {
+  background-color: white;
+  padding: 100px;
+  margin: 20px;
+  box-shadow: 1px 2px #f7f9fe;
+  border-radius: 20px;
+}
+
+/* .logo {
+  margin: auto
+} */
+.navItems {
+  display: flex;
+  justify-self: right;
+  gap: 20px;
+}
+/* defining the layout of all the section */
+.container {
+  display: grid;
+  grid-template-columns: 5% 95%;
+  grid-template-areas:
+    "header header"
+    "sidebar content"
+    "footer footer";
+}
+
+/* footer */
+footer {
+  grid-area: footer;
+  background-color: #111;
+  color: #fff;
+}
